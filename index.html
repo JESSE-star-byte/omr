@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="myForm">
+        <p>Antal meter: </p>
+        <input type="number" id="langd">
+        <p>Maskinhastighet: </p>
+        <input type="number" id="minuter">
+        <p>Minuter tills förbrukad: </p>
+        <textarea name="result" id="result" cols="10" rows="1"></textarea>
+        <br>
+        
+        <div class="respage">
+            <p>Klockan: </p>
+            <div id="displayClock" class="clock" onload="showTime()"></div>
+            <p>Klockslag vid förbrukad: </p>
+            <div id="finishTime" class="clock"></div>
+        </div>
+
+    </form>
+
+
+    
+<script src="js.js">
+</script>
+
+</body>
+</html>
